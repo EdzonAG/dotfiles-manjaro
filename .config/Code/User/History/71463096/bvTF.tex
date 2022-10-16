@@ -1,0 +1,59 @@
+%-------------------------------------------------------------------------------------------------%
+\documentclass[12pt]{article}
+%-------------------------------------------------------------------------------------------------%
+\usepackage[spanish]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage{color}
+%-------------------------------------------------------------------------------------------------%
+\newenvironment{solution}{\begin{proof}[Solución]}{\end{proof}}
+\renewcommand{\qedsymbol}{\rule{0.7em}{0.7em}}
+\newtheorem{proposition}{Proposición}
+\newtheorem{observation}{Observación}
+\newtheorem{afirmation}{Afirmación}
+\newtheorem{definition}{Definición}
+\newtheorem{corollary}{Corolario}
+\newtheorem{exercise}{Ejercicio}
+\newtheorem{theorem}{Teorema}
+\newtheorem{example}{Ejemplo}
+\newtheorem{lemma}{Lema}
+\graphicspath{{Img/}}
+\decimalpoint
+%-------------------------------------------------------------------------------------------------%
+\title{Título}
+\author{Edzon Alanis}
+\date{\today}
+%-------------------------------------------------------------------------------------------------%
+\begin{document}
+\maketitle
+%-------------------------------------------------------------------------------------------------%
+
+\begin{center}
+    \textbf{\Large Método Gauss-Jordan}\\[0.5cm]
+    \today
+\end{center}
+
+\begin{enumerate}
+    \item Una empresa de moda tiene disponibles 150 broches y 70 cremalleras, que desea aprovechar al 100\%, debido a una política de cero desperdicios. Por ello, se ha decidido utilizarlos en la elaboración de bolsos y pantalones de mezclilla para dama, por lo que necesitan saber cuanta mezclilla usarán y el número de piezas que pueden producir.
+    
+    El material a ocupar se muestra en la siguiente tabla: 
+    \begin{table}[h]
+        \begin{tabular}{l|l|l|l|}
+        \cline{2-4}
+                                    & Metros de Mezclilla & Broches & Cremalleras \\ \hline
+        \multicolumn{1}{|l|}{Bolso}    & 1.5                 & 8       & 3           \\ \hline
+        \multicolumn{1}{|l|}{Pantalón} & 2                   & 2       & 1           \\ \hline
+        \end{tabular}
+        \end{table}
+\end{enumerate}
+
+
+%-------------------------------------------------------------------------------------------------%
+\end{document}
+%-------------------------------------------------------------------------------------------------%

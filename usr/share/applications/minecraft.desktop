@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Icon=/usr/share/icons/minecraft.png
+Name=Minecraft
+Comment=Start Minecraft
+Exec=java -jar .local/TLauncher.jar
+Categories=Multimedia;

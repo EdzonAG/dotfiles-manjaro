@@ -1,0 +1,33 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "alt+s",
+        "command": "latex-workshop.view",
+        "when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$/"
+    },
+    {
+        "key": "ctrl+alt+v",
+        "command": "-latex-workshop.view",
+        "when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$/"
+    },
+    {
+        "key": "alt+n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "alt+f",
+        "command": "explorer.newFolder"
+    },
+    {
+        "key": "ctrl+[Semicolon]",
+        "command": "workbench.action.terminal.new"
+    },
+    {
+        "key": "ctrl+d ctrl+right",
+        "command": "workbench.action.positionPanelRight"
+    },
+    {
+        "key": "ctrl+alt+v",
+        "command": "python.execInTerminal-icon"
+    }
+]

@@ -1,0 +1,111 @@
+%-------------------------------------------------------------------------------------------------%
+\documentclass[12pt]{article}
+%-------------------------------------------------------------------------------------------------%
+\usepackage[spanish]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage{color}
+%-------------------------------------------------------------------------------------------------%
+\newenvironment{solution}{\begin{proof}[Solución]}{\end{proof}}
+\renewcommand{\qedsymbol}{\rule{0.7em}{0.7em}}
+\newtheorem{proposition}{Proposición}
+\newtheorem{observation}{Observación}
+\newtheorem{afirmation}{Afirmación}
+\newtheorem{definition}{Definición}
+\newtheorem{corollary}{Corolario}
+\newtheorem{exercise}{Ejercicio}
+\newtheorem{theorem}{Teorema}
+\newtheorem{example}{Ejemplo}
+\newtheorem{lemma}{Lema}
+\graphicspath{{Img/}}
+\decimalpoint
+%-------------------------------------------------------------------------------------------------%
+\title{Título}
+\author{Edzon Alanis}
+\date{\today}
+%-------------------------------------------------------------------------------------------------%
+\begin{document}
+%\maketitle
+%-------------------------------------------------------------------------------------------------%
+
+\begin{center}
+    \textbf{\Large Método Gauss-Jordan}\\[0.5cm]
+    \today
+\end{center}
+
+\begin{enumerate}
+    \item Una empresa de moda tiene disponibles 150 broches y 70 cremalleras, que desea aprovechar al 100\%, debido a una política de cero desperdicios. Por ello, se ha decidido utilizarlos en la elaboración de bolsos y pantalones de mezclilla para dama, por lo que necesitan saber cuanta mezclilla usarán y el número de piezas que pueden producir.
+    
+    El material a ocupar se muestra en la siguiente tabla: 
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{c|c|c|c|}
+        \cline{2-4}
+                                    & Metros de Mezclilla & Broches & Cremalleras \\ \hline
+        \multicolumn{1}{|l|}{Bolso}    & 1.5                 & 8       & 3           \\ \hline
+        \multicolumn{1}{|l|}{Pantalón} & 2                   & 2       & 1           \\ \hline
+        \end{tabular}
+    \end{table}
+
+    Que se puede representar con la siguiente matriz:
+    \[M = \binom{b}{p} \begin{pmatrix}
+        1.5 & 8 & 3 \\
+        2 & 2 & 1
+    \end{pmatrix}\]
+
+    Se observa que el número de broches que se requiere para $b$ bolsos y $p$ pantalones es de $8b+2p$ y que el número de cremalleras necesarias es de $3b+p$. El disponible de recursos es 150 y 70, por lo que se representa con el siguiente sistema de ecuaciones:
+    \begin{align*}
+        8b + 2p &= 150 \\
+        3b + p &= 70
+    \end{align*}
+
+    Con la información, responde: 
+    \begin{enumerate}
+        \item ¿Cuántos bolsos y pantalones pueden producirse?
+        \begin{solution}
+            Resolvemos el sistema por el método de Gauss-Jordan, por lo que acomodamos el sistema en forma de matriz \[\left(\begin{array}{cc|c}  
+                1 & 1 & -1 \\  
+                2 & 3 & 0  \\ 
+            \end{array}\right)\] 
+        \end{solution}
+        \item ¿Cuántos metros de mezclilla se requieren para la producción? 
+    \end{enumerate}
+
+    Recuerda que la ecuación para determinarlo está dada por: 
+    \[1.5b + 2p\]
+    
+    \item Una panadería debe realizar un pedido de tres productos: bizcocho de fresa, pastel de chocolate y rosca de queso. Los ingredientes principales de las recetas se en listan a continuación:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{c|c|c|c|c|}
+        \cline{2-5}
+                                                & \begin{tabular}[c]{@{}c@{}}Tazas \\ de Azúcar\end{tabular} & \begin{tabular}[c]{@{}c@{}}Unidades \\ de Huevo\end{tabular} & \begin{tabular}[c]{@{}c@{}}Leche \\ en Litros\end{tabular} & \begin{tabular}[c]{@{}c@{}}Número \\ de Porciones\end{tabular} \\ \hline
+        \multicolumn{1}{|c|}{Bizcocho de Fresa}   & 3                                                          & 2                                                            & 1                                                          & 6                                                              \\ \hline
+        \multicolumn{1}{|c|}{Pastel de Chocolate} & 2                                                          & 5                                                            & 2                                                          & 8                                                              \\ \hline
+        \multicolumn{1}{|c|}{Rosca de Queso}      & 2                                                          & 4                                                            & 2                                                          & 10                                                             \\ \hline
+        \end{tabular}
+    \end{table}
+
+    Actualmente, se cuenta con un stock de 15 tazas de azúcar, 24 huevos y 11 litros de leche. No hay límite en los demás ingredientes (fresas, chocolates y queso).
+
+    Con esta información determina: ¿Cuántas porciones de cada tipo de producto se pueden realizar considerando los insumos con los que se cuenta (azúcar, huevos y leche)?
+
+    El siguiente sistema de ecuaciones se establece con los insumos necesarios para cada producto con la disponibilidad actual en stock:
+    \begin{align*}
+        3b + 2p +2r &= 15 \\
+        2b + 5b + 4r &= 24 \\
+        1b + 2p +2r &= 11
+    \end{align*}
+\end{enumerate}
+
+
+
+%-------------------------------------------------------------------------------------------------%
+\end{document}
+%-------------------------------------------------------------------------------------------------%

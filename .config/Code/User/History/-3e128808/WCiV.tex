@@ -1,0 +1,59 @@
+%-------------------------------------------------------------------------------------------------%
+\documentclass[12pt]{article}
+%-------------------------------------------------------------------------------------------------%
+\usepackage[spanish]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage{color}
+%-------------------------------------------------------------------------------------------------%
+\newenvironment{solution}{\begin{proof}[Solución]}{\end{proof}}
+\renewcommand{\qedsymbol}{\rule{0.7em}{0.7em}}
+\newtheorem{proposition}{Proposición}
+\newtheorem{observation}{Observación}
+\newtheorem{afirmation}{Afirmación}
+\newtheorem{definition}{Definición}
+\newtheorem{corollary}{Corolario}
+\newtheorem{exercise}{Ejercicio}
+\newtheorem{theorem}{Teorema}
+\newtheorem{example}{Ejemplo}
+\newtheorem{lemma}{Lema}
+\graphicspath{{Img/}}
+\decimalpoint
+%-------------------------------------------------------------------------------------------------%
+\title{Título}
+\author{Edzon Alanis}
+\date{\today}
+%-------------------------------------------------------------------------------------------------%
+\begin{document}
+\begin{center}
+    \textbf{\large Funciones y sus Gráficas} \\[0.5 cm]
+    \today
+\end{center}
+%-------------------------------------------------------------------------------------------------%
+\subsection*{Analiza las funciones que se te presentan a continuación.}
+
+\begin{enumerate}
+    \item $\displaystyle{f(x) = \frac{x}{x^2-x-4}}$
+    \item $\displaystyle{g(t) = \sqrt{2t-1}}$
+    \item $\displaystyle{f(x) = \frac{8}{x}}$
+    \item $\displaystyle{f(x) = \frac{x+1}{x^2+6x+5}}$
+    \item $\displaystyle{f(x) = \frac{x}{x+8}}$
+\end{enumerate}
+
+\subsubsection*{Identifica su dominio y rango, y realiza los procedimientos correspondientes. Si es necesario agrega los gráficos o tablas que ocupaste para llegar al resultado.}
+
+\begin{enumerate}
+    \item \begin{solution}
+        Para el dominio primero por ser una función racional entonces el denominador tiene que ser distinto de cero, así que busquemos los valores para los cuales \[x^2-x-4 \neq 0\]
+    \end{solution}
+\end{enumerate}
+
+%-------------------------------------------------------------------------------------------------%
+\end{document}
+%-------------------------------------------------------------------------------------------------%

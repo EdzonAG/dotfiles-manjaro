@@ -1,0 +1,120 @@
+%-------------------------------------------------------------------------------------------------%
+\documentclass[12pt]{article}
+%-------------------------------------------------------------------------------------------------%
+\usepackage[spanish]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage{color}
+%-------------------------------------------------------------------------------------------------%
+\newenvironment{solution}{\begin{proof}[Solución]}{\end{proof}}
+\renewcommand{\qedsymbol}{\rule{0.7em}{0.7em}}
+\newtheorem{proposition}{Proposición}
+\newtheorem{observation}{Observación}
+\newtheorem{afirmation}{Afirmación}
+\newtheorem{definition}{Definición}
+\newtheorem{corollary}{Corolario}
+\newtheorem{exercise}{Ejercicio}
+\newtheorem{theorem}{Teorema}
+\newtheorem{example}{Ejemplo}
+\newtheorem{lemma}{Lema}
+\graphicspath{{Img1/}}
+\decimalpoint
+%-------------------------------------------------------------------------------------------------%
+\title{Título}
+\author{Edzon Alanis}
+\date{\today}
+%-------------------------------------------------------------------------------------------------%
+\begin{document}
+\begin{center}
+    \textbf{\large Funciones y sus Gráficas} \\[0.5 cm]
+    \today
+\end{center}
+%-------------------------------------------------------------------------------------------------%
+\subsection*{Analiza las funciones que se te presentan a continuación.}
+
+\begin{enumerate}
+    \item $\displaystyle{f(x) = \frac{x}{x^2-x-4}}$
+    \item $\displaystyle{g(t) = \sqrt{2t-1}}$
+    \item $\displaystyle{f(x) = \frac{8}{x}}$
+    \item $\displaystyle{f(x) = \frac{x+1}{x^2+6x+5}}$
+    \item $\displaystyle{f(x) = \frac{x}{x+8}}$
+\end{enumerate}
+
+\subsubsection*{Identifica su dominio y rango, y realiza los procedimientos correspondientes. Si es necesario agrega los gráficos o tablas que ocupaste para llegar al resultado.}
+
+\begin{enumerate}
+    \item \[f(x) = \frac{x}{x^2-x-4}\]\begin{solution}
+        Para el dominio primero por ser una función racional entonces el denominador tiene que ser distinto de cero, así que el dominio serán los valores que cumplan que \[x^2-x-4 \neq 0\] entonces resolvemos la ecuación para saber los valores donde no pasa la función
+        \[x^2-x-4 = 0 \Rightarrow x = \frac{-(-1) \pm \sqrt{(-1)^2-4(1)(-4)}}{2(1)} = \frac{1 \pm \sqrt{17}}{2}\]
+        \[x_1 = \frac{1}{2} + \frac{\sqrt{17}}{2} \qquad x_2 = \frac{1}{2} - \frac{\sqrt{17}}{2}\]
+        por lo que el dominio son todos los números reales excepto los encontrados anteriormente, lo podemos representar de la siguiente forma
+        \[Dom_f = \left(-\infty, \frac{1}{2} - \frac{\sqrt{17}}{2}\right) \cup \left(\frac{1}{2} - \frac{\sqrt{17}}{2}, \frac{1}{2} + \frac{\sqrt{17}}{2}\right) \cup \left(\frac{1}{2} + \frac{\sqrt{17}}{2}, \infty\right)\]
+        Para obtener el rango analizamos su grafica donde podemos observar que efectivamente se cumple el dominio que habíamos obtenido 
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width = 0.6\textwidth]{figura1.png}
+        \end{figure}
+        Ya que no hay intersecciones en el eje vertical del lado positivo, negativo y el cero entonces decimos que su rango es
+        \[Ran_f = (-\infty,\infty)\]
+    \end{solution}
+    \item \[g(t) = \sqrt{2t-1}\]\begin{solution}
+        Para el dominio por ser una función radical entonces el argumento de la raíz cuadrada debe ser mayor o igual a cero, por lo que resolvemos esa desigualdad para encontrarlo
+        \[2t -1 \geq 0 \Rightarrow 2t \geq 1 \Rightarrow t \geq \frac{1}{2}\] 
+        esto quiere decir que el dominio serán todos los $t$ mayores e iguales a $\frac{1}{2}$, de otra forma
+        \[Dom_g = \left(\frac{1}{2} , \infty\right)\]
+        para obtener el rango podemos observar el grafico además de analizar que una raíz siempre arrojará valores positivos y el cero, por lo que podemos obtener el rango de manera inmediata 
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width = 0.5\textwidth]{figura2.png}
+        \end{figure}
+        El rango es
+        \[Ran_f = (0,\infty)\]
+    \end{solution}
+    \item \[f(x) = \frac{8}{x}\]\begin{solution}
+        El dominio de esta función se obtiene de inmediato ya que el único valor por el que no puede pasar es el cero, por lo que
+        \[Dom_f = (-\infty,0) \cup (0, \infty)\]
+        para obtener el rango despejamos la $x$ y hacemos $f(x) = y$
+        \[y = \frac{8}{x} \Rightarrow x = \frac{8}{y}\]
+        y como vemos la función es parecida, calculando el dominio de esta obtenemos lo mismo por lo que su rango es
+        \[Ran_f = (-\infty,0) \cup (0, \infty)\]
+        de igual forma se puede observar en el siguiente grafico
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width = 0.5\textwidth]{figura3.png}
+        \end{figure}
+    \end{solution}
+    \item \[f(x) = \frac{x+1}{x^2+6x+5}\]\begin{solution}
+        Para el dominio, de nuevo necesitamos saber en que valores el denominador es distinto de cero, por lo que resolvemos
+        \[x^2+6x +5 = 0\] por factorización \[(x+5)(x+1) = 0 \Rightarrow x_1 = -5, x_2 = -1\]
+        por lo que el dominio será todos los reales excepto esos dos, entonces
+        \[Dom_f = (-\infty, -5) \cup (-5,-1) \cup (-1, \infty)\]
+        al analizar el grafico de la función pareciera que si pasa por el $(-1)$ pero aunque no sea visible la función realmente se corta en ese punto
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width = 0.5\textwidth]{figura4.png}
+        \end{figure}
+        el rango ahora como se observa será todos los reales exceptuando al cero que es donde no pasa
+        \[Ran_f = (-\infty, 0) \cup (0, \infty)\]
+    \end{solution}
+    \item \[f(x) = \frac{x}{x+8}\] \begin{solution}
+        El dominio lo obtenemos de igual forma resolviendo el denominador igual a cero
+        \[x+8 = 0 \rightarrow x = -8\]
+        por lo que puede tomar cualquier valor menos $(-8)$, entonces
+        \[Dom_f = (-\infty,-8)\cup (-8,\infty)\]
+        para el rango 
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width = 0.5\textwidth]{figura6.png}
+        \end{figure}
+    \end{solution}
+\end{enumerate}
+
+%-------------------------------------------------------------------------------------------------%
+\end{document}
+%-------------------------------------------------------------------------------------------------%

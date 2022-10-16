@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Xournal",
+    "icon": "com.github.xournalpp.xournalpp",
+    "shortcut": "<Control><Alt><Super>x",
+    "centered": false,
+    "id": 0,
+    "children": [
+      {
+        "name": "Pen",
+        "icon": "tool-pencil-symbolic",
+        "type": "Shortcut",
+        "data": {
+          "shortcut": "<Shift><Control>p"
+        },
+        "angle": -1
+      },
+      {
+        "name": "TeX",
+        "icon": "labplot-TeX-logo",
+        "type": "Shortcut",
+        "data": {
+          "shortcut": "<Shift><Control>x"
+        },
+        "angle": -1
+      },
+      {
+        "name": "Select",
+        "icon": "cm_copyfullnamestoclip",
+        "type": "Shortcut",
+        "data": {
+          "shortcut": "<Shift><Control>r"
+        },
+        "angle": -1
+      },
+      {
+        "name": "Highlighter",
+        "icon": "autocorrection",
+        "type": "Shortcut",
+        "data": {
+          "shortcut": "<Shift><Control>h"
+        },
+        "angle": -1
+      },
+      {
+        "name": "Eraser",
+        "icon": "tool-eraser-symbolic",
+        "type": "Shortcut",
+        "data": {
+          "shortcut": "<Shift><Control>e"
+        },
+        "angle": -1
+      },
+      {
+        "name": "Hand",
+        "icon": "hand",
+        "type": "Shortcut",
+        "data": {
+          "shortcut": "<Shift><Control>a"
+        },
+        "angle": -1
+      },
+      {
+        "name": "Forms",
+        "icon": "transform-shear-down",
+        "type": "CustomMenu",
+        "children": [
+          {
+            "name": "Circle",
+            "icon": "tool-circle-symbolic",
+            "type": "Shortcut",
+            "data": {
+              "shortcut": "<Control>3"
+            },
+            "angle": -1
+          },
+          {
+            "name": "Arrow",
+            "icon": "draw-arrow-forward",
+            "type": "Shortcut",
+            "data": {
+              "shortcut": "<Control>4"
+            },
+            "angle": -1
+          },
+          {
+            "name": "Line",
+            "icon": "tool-line-symbolic",
+            "type": "Shortcut",
+            "data": {
+              "shortcut": "<Control>6"
+            },
+            "angle": -1
+          },
+          {
+            "name": "Rectangle",
+            "icon": "tool-rectangle-symbolic",
+            "type": "Shortcut",
+            "data": {
+              "shortcut": "<Control>2"
+            },
+            "angle": -1
+          }
+        ],
+        "angle": -1,
+        "data": {}
+      },
+      {
+        "name": "Text",
+        "icon": "dialog-text-and-font",
+        "type": "Shortcut",
+        "data": {
+          "shortcut": "<Shift><Control>t"
+        },
+        "angle": -1
+      }
+    ],
+    "type": "CustomMenu",
+    "data": {},
+    "touchButton": false,
+    "superRMB": false
+  }
+]

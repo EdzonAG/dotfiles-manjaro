@@ -9,10 +9,14 @@ Clone the repository on your pc with
 git clone https://github.com/EdzonAG/dotfiles-manjaro.git
 ```
 
-And only copy the files on your ´/home/usr/´ directory, for the ´usr´ and ´etc´ directory copy in the ´/´ route
+And only copy the files on your */home/usr/* directory, for the */usr* and */etc* directory copy in the */* route
 
-## Screenshots
+## Gallery
 
 ### Desktop
 
+![Desktop](.screenshots/desktop.png)
+
 ### Gnome Extensions
+
+![Extensions](.screenshots/extensions.png)

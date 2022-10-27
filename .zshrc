@@ -10,4 +10,3 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
 fi
 # Neofetch
 neofetch
-source /usr/share/nvm/init-nvm.sh

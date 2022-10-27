@@ -8,18 +8,22 @@
     "spellright.notificationClass": "information",
     "editor.fontFamily": "'Victor Mono', monospace",
     "editor.fontLigatures": true,
-    "doki.statusbar.name": "Miko",
     "workbench.editorAssociations": {
         "*.pdf": "latex-workshop-pdf-hook"
     },
-    "doki.sticker.css": "background-position:101% 97%",
+    "doki.sticker.css": "background-position:100% 98.4%",
     "editor.linkedEditing": true,
     "explorer.confirmDragAndDrop": false,
-    "doki.sticker.path": "/home/edzonag/Pictures/Wallpapers/rem.png",
     "spellright.language": [],
     "spellright.documentTypes": [
-        "markdown",
-        "latex"
+        "markdown"
     ],
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "window.menuBarVisibility": "toggle",
+    "doki.statusbar.name": "Kobeni",
+    "workbench.activityBar.visible": false
 }

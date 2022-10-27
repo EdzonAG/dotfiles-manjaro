@@ -31,6 +31,7 @@
 		"\\usepackage{lipsum}",
 		"\\usepackage{color}",
 		"\\usepackage{float}",
+		"\\usepackage{cancel}",
 		"%-------------------------------------------------------------------------------------------------%",
 		"\\titleformat{\\chapter}{\\normalfont\\huge}{\\thechapter.}{20pt}{\\huge \\bf}",
 		"\\newenvironment{solution}{\\begin{proof}[Solución]}{\\end{proof}}",
@@ -86,8 +87,8 @@
 		],
 		"description": "insert assignment template"
 	},
-	"insert template": {
-		"prefix": "\\normaltemplate",
+	"insert school template": {
+		"prefix": "\\schooltemplate",
 		"body": [
 		"%-------------------------------------------------------------------------------------------------%",
 		"\\documentclass[12pt]{article}",
@@ -102,6 +103,7 @@
 		"\\usepackage{parskip}",
 		"\\usepackage{float}",
 		"\\usepackage{color}",
+		"\\usepackage{cancel}",
 		"%-------------------------------------------------------------------------------------------------%",
 		"\\newenvironment{solution}{\\begin{proof}[Solución]}{\\end{proof}}",
 		"\\renewcommand{\\qedsymbol}{\\rule{0.7em}{0.7em}}",
@@ -119,7 +121,6 @@
 		"%-------------------------------------------------------------------------------------------------%",
 		"\\title{${1:Título}}",
 		"\\author{Edzon Alanis}",
-		"\\date{\\today}",
 		"%-------------------------------------------------------------------------------------------------%",
 		"\\begin{document}",
 		"\\maketitle",
@@ -131,10 +132,48 @@
 		"\\end{document}",
 		"%-------------------------------------------------------------------------------------------------%"
 		],
-		"description": "insert template"
+		"description": "insert school template"
 	},
-	"insert special template": {
-		"prefix": "\\specialtemplate",
+	"insert normal template": {
+		"prefix": "\\normaltemplate",
+		"body": [
+		"%-------------------------------------------------------------------------------------------------%",
+		"\\documentclass[12pt]{article}",
+		"%-------------------------------------------------------------------------------------------------%",
+		"\\usepackage[spanish]{babel}",
+		"\\usepackage[margin=1in]{geometry}",
+		"\\usepackage[hidelinks]{hyperref}",
+		"\\usepackage{amssymb,amsmath,amsthm,amsfonts}",
+		"\\usepackage{enumerate}",
+		"\\usepackage{graphicx}",
+		"\\usepackage{lipsum}",
+		"\\usepackage{parskip}",
+		"\\usepackage{float}",
+		"\\usepackage{color}",
+		"\\usepackage{cancel}",
+		"%-------------------------------------------------------------------------------------------------%",
+		"\\newenvironment{solution}{\\begin{proof}[Solución]}{\\end{proof}}",
+		"\\renewcommand{\\qedsymbol}{\\rule{0.7em}{0.7em}}",
+		"\\graphicspath{{Img/}}",
+		"\\decimalpoint",
+		"%-------------------------------------------------------------------------------------------------%",
+		"\\title{${1:Título}}",
+		"\\author{Edzon AG}",
+		"%-------------------------------------------------------------------------------------------------%",
+		"\\begin{document}",
+		"\\maketitle",
+		"%-------------------------------------------------------------------------------------------------%",
+		"",
+		"${2:}",
+		"",
+		"%-------------------------------------------------------------------------------------------------%",
+		"\\end{document}",
+		"%-------------------------------------------------------------------------------------------------%"
+		],
+		"description": "insert normal template"
+	},
+	"insert homework template": {
+		"prefix": "\\homeworktemplate",
 		"body": [
 		"%-------------------------------------------------------------------------------------------------%",
 		"\\documentclass[12pt]{article}",
@@ -151,6 +190,7 @@
 		"\\usepackage{lipsum}",
 		"\\usepackage{color}",
 		"\\usepackage{float}",
+		"\\usepackage{cancel}",
 		"%-------------------------------------------------------------------------------------------------%",
 		"\\newenvironment{solution}{\\begin{proof}[Solución]}{\\end{proof}}",
 		"\\renewcommand{\\qedsymbol}{\\rule{0.7em}{0.7em}}",
@@ -310,11 +350,81 @@
 		],
 		"description": "insert class"
 	},
-	"new line name": {
-		"prefix": "\\nameline",
+	"new vspace": {
+		"prefix": "\\verticalspace",
 		"body": [
-		" \\\\\\[0.2 cm] "
+		" \\\\\\[0.${1:} cm] "
 		],
-		"description": "new line name"
+		"description": "new vspace"
+	},
+	"Bold Text": {
+		"prefix": "\\bf",
+		"body": [
+		"\\textbf{${1:}}"
+		],
+		"description": "Bold Text"
+	},
+	"Italic Text": {
+		"prefix": "\\it",
+		"body": [
+		"\\textit{${1:}}"
+		],
+		"description": "Italic Text"
+	},
+	"Underline Text": {
+		"prefix": "\\ul",
+		"body": [
+		"\\underline{${1:}}"
+		],
+		"description": "Underline Text"
+	},
+	"Limit Template": {
+		"prefix": "\\limit",
+		"body": [
+		"\\lim_{${1:} \\rightarrow ${2:}} "
+		],
+		"description": "Limit Template"
+	},
+	"Derivative Template": {
+		"prefix": "\\derivative",
+		"body": [
+		"\\frac{d ${1:}}{d ${2:}} "
+		],
+		"description": "Derivative Template"
+	},
+	"Partial Template": {
+		"prefix": "\\partial",
+		"body": [
+		"\\frac{\\partial ${1:}}{\\partial ${2:}} "
+		],
+		"description": "Partial Template"
+	},
+	"Defined Integral": {
+		"prefix": "\\defintegral",
+		"body": [
+		"\\int_{${1:}}^{${2:}} ${3:} \\, \\mathrm{d}${4:}"
+		],
+		"description": "Defined Integral"
+	},
+	"Integral Template": {
+		"prefix": "\\integral",
+		"body": [
+		"\\int ${1:} \\, \\mathrm{d}${2:}"
+		],
+		"description": "Integral Template"
+	},
+	"Evaluate Integral": {
+		"prefix": "\\evalintegral",
+		"body": [
+		"\\left. ${1:} \\right|_{${2:}}^{${3:}}"
+		],
+		"description": "Evaluate Integral"
+	},
+	"Display Style": {
+		"prefix": "\\display",
+		"body": [
+		"\\displaystyle{${1:}}"
+		],
+		"description": "Display Style"
 	}
 }
